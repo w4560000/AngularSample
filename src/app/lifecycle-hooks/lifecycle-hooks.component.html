@@ -1,0 +1,36 @@
+測試 OnChanges 和 OnInit 和 AfterContentInit 與 AfterContentChecked
+<br/> <br/>
+
+價格{{ price }}
+
+<br/>
+
+SimpleChanges Test 
+
+<br/>
+
+是否是第一次變更 {{ firstChange }}
+
+<br/>
+
+當前價格 {{ currentValue }}
+
+<br/>
+
+前次價格 {{ previousValue}}
+
+<br/>
+
+ng-content
+
+<br/>
+<ng-content></ng-content>
+
+<br/>
+-------------------------------------------------------------------------------------
+<br/>
+利用app-child 測試 AfterViewInit 與 AfterViewChecked
+<br/>
+
+<button (click)="create()">create new child</button>
+<app-child *ngFor="let item of list" [value]="item" [test]="test" ></app-child>
