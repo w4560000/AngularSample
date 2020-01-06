@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SampleComponent } from './sample/sample.component';
 import { LifecycleHooksParentComponent } from './lifecycle-hooks-parent/lifecycle-hooks-parent.component';
-import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.component';
+import { DirectiveSampleComponent } from './directive-sample/directive-sample.component';
+import { NgIfElseSampleComponent } from './ng-if-else-sample/ng-if-else-sample.component'
 
 const routes: Routes = [
   {
@@ -14,9 +15,13 @@ const routes: Routes = [
     component: LifecycleHooksParentComponent
   },
   {
-    path: 'lifecyclehooks',
-    component: LifecycleHooksComponent
-  }
+    path: 'directivesample',
+    component: DirectiveSampleComponent
+  },
+  {
+    path: 'ngifelsesample',
+    component: NgIfElseSampleComponent
+  },
 ];
 
 @NgModule({

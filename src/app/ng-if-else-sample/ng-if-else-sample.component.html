@@ -1,0 +1,5 @@
+<div *ngIf="display; else anotherWord">Hello</div>
+<ng-template #anotherWord>
+  <div>World</div>
+</ng-template>
+<button (click)="display = !display">Toggle Display</button>
